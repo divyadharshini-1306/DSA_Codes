@@ -26,8 +26,11 @@ void RDisplay(struct Node *p)
 {
     if(p!=NULL)
     {
-        printf("%d ",p->data);
+        //printf("%d ",p->data);
+        //RDisplay(p->next);
+        
         RDisplay(p->next);
+        printf("%d ",p->data);
     }
 
 
